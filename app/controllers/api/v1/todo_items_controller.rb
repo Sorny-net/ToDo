@@ -3,7 +3,6 @@ class Api::V1::TodoItemsController < ApplicationController
   
   def index
     @todo_items = TodoItem.all
-    render json: @todo_items
   end
   
   def show
